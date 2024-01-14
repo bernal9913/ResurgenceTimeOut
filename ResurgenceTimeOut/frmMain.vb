@@ -7,7 +7,7 @@
 
 Imports System.IO
 Public Class frmMain
-    Const mc_strPathList As String = "C:\TimeOutPathList.txt"
+    Dim mc_strPathList As String = "C:\TimeOutPathList.txt" 'Cambiado de constante a variable por el bien de la trama' 
     Dim m_strDataFilePath As String
     Dim m_strrawDataFileName As String
     Dim m_boolWhatToDo As Boolean
@@ -26,15 +26,19 @@ Public Class frmMain
         cmbMiddle.SelectedItem = "Control"
         cmbRight.SelectedItem = "Alternative"
         Me.Location = New System.Drawing.Point(0, 0)
-
+        '' vieja linea comentada 
+        'MsgBox("'" & mc_strPathList & "' no encontrado. Sesión.", MsgBoxStyle.Critical, "Time Out")
         If Not File.Exists(mc_strPathList) Then
-            MsgBox("'" & mc_strPathList & "' no encontrado. Sesión.", MsgBoxStyle.Critical, "Time Out")
-            End
-        Else
-            Dim ReadDataPaths As New StreamReader(New FileStream(mc_strPathList, FileMode.Open, FileAccess.Read))
-            m_strDataFilePath = ReadDataPaths.ReadLine
-            ReadDataPaths.Close()
+            ' Si el archivo no existe, crearlo en la carpeta de documentos del usuario
+            mc_strPathList = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "TimeOutPathList.txt")
+            File.WriteAllText(mc_strPathList, String.Empty)
+            MsgBox("'" & mc_strPathList & "' no encontrado. Se creó en la carpeta de documentos del usuario.", MsgBoxStyle.Information, "Time Out")
         End If
+
+        ' Leer la ruta del archivo
+        Dim ReadDataPaths As New StreamReader(New FileStream(mc_strPathList, FileMode.Open, FileAccess.Read))
+        m_strDataFilePath = ReadDataPaths.ReadLine
+        ReadDataPaths.Close()
     End Sub
 
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
