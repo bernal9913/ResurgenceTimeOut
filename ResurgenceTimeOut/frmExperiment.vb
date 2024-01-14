@@ -205,7 +205,7 @@ Public Class frmExperiment
 
     Private Sub btnPoints_Click(sender As Object, e As EventArgs) Handles btnPoints.Click
         m_intPoints += 1
-        lblPoints.Text = "Points: " & CStr(m_intPoints)
+        lblPoints.Text = "Puntos: " & CStr(m_intPoints)
         Consumatory(False)
         m_intTimeLastSR = Environment.TickCount
     End Sub

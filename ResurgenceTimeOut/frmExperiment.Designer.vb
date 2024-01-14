@@ -45,10 +45,9 @@ Partial Class frmExperiment
         Me.btnMiddle.BackColor = System.Drawing.Color.Black
         Me.btnMiddle.CausesValidation = False
         Me.btnMiddle.ForeColor = System.Drawing.Color.Black
-        Me.btnMiddle.Location = New System.Drawing.Point(588, 289)
-        Me.btnMiddle.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnMiddle.Location = New System.Drawing.Point(392, 188)
         Me.btnMiddle.Name = "btnMiddle"
-        Me.btnMiddle.Size = New System.Drawing.Size(306, 68)
+        Me.btnMiddle.Size = New System.Drawing.Size(204, 44)
         Me.btnMiddle.TabIndex = 0
         Me.btnMiddle.TabStop = False
         Me.btnMiddle.UseVisualStyleBackColor = False
@@ -56,12 +55,11 @@ Partial Class frmExperiment
         'btnStartExperiment
         '
         Me.btnStartExperiment.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStartExperiment.Location = New System.Drawing.Point(672, 375)
-        Me.btnStartExperiment.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnStartExperiment.Location = New System.Drawing.Point(448, 244)
         Me.btnStartExperiment.Name = "btnStartExperiment"
-        Me.btnStartExperiment.Size = New System.Drawing.Size(135, 62)
+        Me.btnStartExperiment.Size = New System.Drawing.Size(90, 40)
         Me.btnStartExperiment.TabIndex = 1
-        Me.btnStartExperiment.Text = "START"
+        Me.btnStartExperiment.Text = "INICIAR"
         Me.btnStartExperiment.UseVisualStyleBackColor = True
         '
         'btnRight
@@ -69,10 +67,9 @@ Partial Class frmExperiment
         Me.btnRight.BackColor = System.Drawing.Color.Black
         Me.btnRight.CausesValidation = False
         Me.btnRight.ForeColor = System.Drawing.Color.Black
-        Me.btnRight.Location = New System.Drawing.Point(1014, 288)
-        Me.btnRight.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnRight.Location = New System.Drawing.Point(676, 187)
         Me.btnRight.Name = "btnRight"
-        Me.btnRight.Size = New System.Drawing.Size(306, 68)
+        Me.btnRight.Size = New System.Drawing.Size(204, 44)
         Me.btnRight.TabIndex = 2
         Me.btnRight.TabStop = False
         Me.btnRight.UseVisualStyleBackColor = False
@@ -82,10 +79,9 @@ Partial Class frmExperiment
         Me.btnLeft.BackColor = System.Drawing.Color.Black
         Me.btnLeft.CausesValidation = False
         Me.btnLeft.ForeColor = System.Drawing.Color.Black
-        Me.btnLeft.Location = New System.Drawing.Point(144, 289)
-        Me.btnLeft.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnLeft.Location = New System.Drawing.Point(96, 188)
         Me.btnLeft.Name = "btnLeft"
-        Me.btnLeft.Size = New System.Drawing.Size(306, 68)
+        Me.btnLeft.Size = New System.Drawing.Size(204, 44)
         Me.btnLeft.TabIndex = 3
         Me.btnLeft.TabStop = False
         Me.btnLeft.UseVisualStyleBackColor = False
@@ -98,44 +94,39 @@ Partial Class frmExperiment
         Me.lblPoints.AutoSize = True
         Me.lblPoints.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPoints.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPoints.Location = New System.Drawing.Point(624, 37)
-        Me.lblPoints.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblPoints.Location = New System.Drawing.Point(416, 24)
         Me.lblPoints.Name = "lblPoints"
-        Me.lblPoints.Size = New System.Drawing.Size(221, 57)
+        Me.lblPoints.Size = New System.Drawing.Size(164, 39)
         Me.lblPoints.TabIndex = 4
-        Me.lblPoints.Text = "Points: 0"
+        Me.lblPoints.Text = "Puntos: 0"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(144, 55)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(96, 36)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(145, 101)
+        Me.Label1.Size = New System.Drawing.Size(98, 67)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "+1"
         '
         'btnPoints
         '
         Me.btnPoints.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPoints.Location = New System.Drawing.Point(54, 185)
-        Me.btnPoints.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnPoints.Location = New System.Drawing.Point(36, 120)
         Me.btnPoints.Name = "btnPoints"
-        Me.btnPoints.Size = New System.Drawing.Size(336, 62)
+        Me.btnPoints.Size = New System.Drawing.Size(224, 40)
         Me.btnPoints.TabIndex = 6
-        Me.btnPoints.Text = "Collect Point"
+        Me.btnPoints.Text = "Tomar punto"
         Me.btnPoints.UseVisualStyleBackColor = True
         '
         'grpConsumatory
         '
         Me.grpConsumatory.Controls.Add(Me.btnPoints)
         Me.grpConsumatory.Controls.Add(Me.Label1)
-        Me.grpConsumatory.Location = New System.Drawing.Point(30, 25)
-        Me.grpConsumatory.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.grpConsumatory.Location = New System.Drawing.Point(20, 16)
         Me.grpConsumatory.Name = "grpConsumatory"
-        Me.grpConsumatory.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.grpConsumatory.Size = New System.Drawing.Size(450, 271)
+        Me.grpConsumatory.Size = New System.Drawing.Size(300, 176)
         Me.grpConsumatory.TabIndex = 7
         Me.grpConsumatory.TabStop = False
         '
@@ -146,10 +137,9 @@ Partial Class frmExperiment
         Me.lblTimeOut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTimeOut.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTimeOut.ForeColor = System.Drawing.Color.Black
-        Me.lblTimeOut.Location = New System.Drawing.Point(480, 117)
-        Me.lblTimeOut.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTimeOut.Location = New System.Drawing.Point(320, 76)
         Me.lblTimeOut.Name = "lblTimeOut"
-        Me.lblTimeOut.Size = New System.Drawing.Size(506, 110)
+        Me.lblTimeOut.Size = New System.Drawing.Size(339, 75)
         Me.lblTimeOut.TabIndex = 8
         Me.lblTimeOut.Text = "TIME OUT"
         '
@@ -167,21 +157,22 @@ Partial Class frmExperiment
         Me.lblSessionEnd.AllowDrop = True
         Me.lblSessionEnd.AutoSize = True
         Me.lblSessionEnd.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSessionEnd.Location = New System.Drawing.Point(101, 553)
+        Me.lblSessionEnd.Location = New System.Drawing.Point(67, 359)
+        Me.lblSessionEnd.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblSessionEnd.Name = "lblSessionEnd"
-        Me.lblSessionEnd.Size = New System.Drawing.Size(1941, 59)
+        Me.lblSessionEnd.Size = New System.Drawing.Size(1444, 39)
         Me.lblSessionEnd.TabIndex = 12
-        Me.lblSessionEnd.Text = "Please knock on the door to alert the experimenter that this part of the study is" &
-    " over."
+        Me.lblSessionEnd.Text = "Por favor toque la puerta para avisar al experimentar que esta parte del estudio " &
+    "ha concluido."
         Me.lblSessionEnd.Visible = False
         '
         'frmExperiment
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.CausesValidation = False
-        Me.ClientSize = New System.Drawing.Size(1436, 745)
+        Me.ClientSize = New System.Drawing.Size(957, 484)
         Me.ControlBox = False
         Me.Controls.Add(Me.lblSessionEnd)
         Me.Controls.Add(Me.lblTimeOut)
@@ -191,7 +182,6 @@ Partial Class frmExperiment
         Me.Controls.Add(Me.btnRight)
         Me.Controls.Add(Me.btnStartExperiment)
         Me.Controls.Add(Me.btnMiddle)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "frmExperiment"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.grpConsumatory.ResumeLayout(False)

@@ -28,7 +28,7 @@ Public Class frmMain
         Me.Location = New System.Drawing.Point(0, 0)
 
         If Not File.Exists(mc_strPathList) Then
-            MsgBox("'" & mc_strPathList & "' not found. Session aborted.", MsgBoxStyle.Critical, "Time Out")
+            MsgBox("'" & mc_strPathList & "' no encontrado. Sesión.", MsgBoxStyle.Critical, "Time Out")
             End
         Else
             Dim ReadDataPaths As New StreamReader(New FileStream(mc_strPathList, FileMode.Open, FileAccess.Read))
@@ -66,15 +66,16 @@ Public Class frmMain
     End Sub
 
     Private Function CheckDataFile() As Boolean
-        m_strrawDataFileName = m_strDataFilePath & " Results for " & txtParticipantID.Text & " for Session " & cmbSessionNumber.SelectedItem & ".txt"
+        m_strrawDataFileName = m_strDataFilePath & " Resultados para " & txtParticipantID.Text & " para la sesión  " & cmbSessionNumber.SelectedItem & ".txt"
         Dim boolstatus As Boolean = True
         If File.Exists(m_strrawDataFileName) Then
-            If MsgBox("This subject already has a file for today. Are you sure you want to override this file?", vbYesNo) = vbNo Then
+            If MsgBox("Este sujeto ya tiene un archivo para hoy. ¿Esta seguro que desea sobreescribirlo?", vbYesNo) = vbNo Then
                 boolstatus = False
                 Return boolstatus
                 Exit Function
             End If
         End If
+        'Investigar a que se refieren con lever, puede ser un slider, palanca o boton' 
         If cmbLeft.SelectedItem = cmbMiddle.SelectedItem Or cmbLeft.SelectedItem = cmbRight.SelectedItem Or cmbMiddle.SelectedItem = cmbRight.SelectedItem Then
             MsgBox("Please assign each lever to a different role")
             boolstatus = False
@@ -87,6 +88,8 @@ Public Class frmMain
             Return boolstatus
             Exit Function
         End If
+        'Investigar roles'
+        'Investigar tambien el tema de 
         If nudPhase1Duration.Value <> 20 Or nudPhase2Duration.Value <> 20 Or nudPhase3Duration.Value <> 20 Then
             If MsgBox("At least one phase duration is not 20, did Catherine tell you to change this?", vbYesNo) = vbNo Then
                 boolstatus = False
@@ -141,10 +144,10 @@ Public Class frmMain
         GroupBox3.Enabled = OnOff
         If OnOff = False Then
             btnStart.Enabled = True
-            btnChangeParameters.Text = "Change Parameters"
+            btnChangeParameters.Text = "Cambiar ajustes"
         Else
             btnStart.Enabled = False
-            btnChangeParameters.Text = "Save Parameters"
+            btnChangeParameters.Text = "Guardar ajustes"
         End If
     End Sub
 
