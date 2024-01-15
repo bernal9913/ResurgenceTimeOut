@@ -77,9 +77,10 @@ Partial Class frmMain
         'btnStart
         '
         Me.btnStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStart.Location = New System.Drawing.Point(366, 267)
+        Me.btnStart.Location = New System.Drawing.Point(488, 329)
+        Me.btnStart.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnStart.Name = "btnStart"
-        Me.btnStart.Size = New System.Drawing.Size(88, 29)
+        Me.btnStart.Size = New System.Drawing.Size(117, 36)
         Me.btnStart.TabIndex = 0
         Me.btnStart.Text = "Iniciar"
         Me.btnStart.UseVisualStyleBackColor = True
@@ -87,121 +88,134 @@ Partial Class frmMain
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 25)
+        Me.Label1.Location = New System.Drawing.Point(8, 31)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(109, 20)
+        Me.Label1.Size = New System.Drawing.Size(136, 25)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "VI Value (s):"
+        Me.Label1.Text = "Valor(es) VI:"
         '
         'nudScheduleMean
         '
         Me.nudScheduleMean.Increment = New Decimal(New Integer() {5, 0, 0, 0})
-        Me.nudScheduleMean.Location = New System.Drawing.Point(114, 25)
+        Me.nudScheduleMean.Location = New System.Drawing.Point(152, 31)
+        Me.nudScheduleMean.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudScheduleMean.Maximum = New Decimal(New Integer() {300, 0, 0, 0})
         Me.nudScheduleMean.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nudScheduleMean.Name = "nudScheduleMean"
-        Me.nudScheduleMean.Size = New System.Drawing.Size(44, 26)
+        Me.nudScheduleMean.Size = New System.Drawing.Size(59, 30)
         Me.nudScheduleMean.TabIndex = 2
         Me.nudScheduleMean.Value = New Decimal(New Integer() {2, 0, 0, 0})
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 51)
+        Me.Label2.Location = New System.Drawing.Point(8, 63)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(107, 20)
+        Me.Label2.Size = New System.Drawing.Size(138, 25)
         Me.Label2.TabIndex = 3
-        Me.Label2.Text = "# VI Values:"
+        Me.Label2.Text = "# Valores VI:"
         '
         'nudItems
         '
         Me.nudItems.Increment = New Decimal(New Integer() {5, 0, 0, 0})
-        Me.nudItems.Location = New System.Drawing.Point(114, 51)
+        Me.nudItems.Location = New System.Drawing.Point(152, 63)
+        Me.nudItems.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudItems.Maximum = New Decimal(New Integer() {30000, 0, 0, 0})
         Me.nudItems.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nudItems.Name = "nudItems"
-        Me.nudItems.Size = New System.Drawing.Size(44, 26)
+        Me.nudItems.Size = New System.Drawing.Size(59, 30)
         Me.nudItems.TabIndex = 4
         Me.nudItems.Value = New Decimal(New Integer() {10, 0, 0, 0})
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(5, 22)
+        Me.Label3.Location = New System.Drawing.Point(7, 27)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(95, 20)
+        Me.Label3.Size = New System.Drawing.Size(132, 25)
         Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Left Lever:"
+        Me.Label3.Text = "Palanca Izq:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(5, 48)
+        Me.Label4.Location = New System.Drawing.Point(7, 59)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(115, 20)
+        Me.Label4.Size = New System.Drawing.Size(168, 25)
         Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Middle Lever:"
+        Me.Label4.Text = "Palanca Centro:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(5, 75)
+        Me.Label5.Location = New System.Drawing.Point(7, 92)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(106, 20)
+        Me.Label5.Size = New System.Drawing.Size(137, 25)
         Me.Label5.TabIndex = 7
-        Me.Label5.Text = "Right Lever:"
+        Me.Label5.Text = "Palanca Der:"
         '
         'cmbLeft
         '
         Me.cmbLeft.FormattingEnabled = True
         Me.cmbLeft.Items.AddRange(New Object() {"Target", "Alternative", "Control"})
-        Me.cmbLeft.Location = New System.Drawing.Point(132, 20)
+        Me.cmbLeft.Location = New System.Drawing.Point(176, 25)
+        Me.cmbLeft.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbLeft.Name = "cmbLeft"
-        Me.cmbLeft.Size = New System.Drawing.Size(121, 28)
+        Me.cmbLeft.Size = New System.Drawing.Size(160, 33)
         Me.cmbLeft.TabIndex = 8
         '
         'cmbMiddle
         '
         Me.cmbMiddle.FormattingEnabled = True
         Me.cmbMiddle.Items.AddRange(New Object() {"Target", "Alternative", "Control"})
-        Me.cmbMiddle.Location = New System.Drawing.Point(132, 46)
+        Me.cmbMiddle.Location = New System.Drawing.Point(176, 57)
+        Me.cmbMiddle.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbMiddle.Name = "cmbMiddle"
-        Me.cmbMiddle.Size = New System.Drawing.Size(121, 28)
+        Me.cmbMiddle.Size = New System.Drawing.Size(160, 33)
         Me.cmbMiddle.TabIndex = 9
         '
         'cmbRight
         '
         Me.cmbRight.FormattingEnabled = True
         Me.cmbRight.Items.AddRange(New Object() {"Target", "Alternative", "Control"})
-        Me.cmbRight.Location = New System.Drawing.Point(132, 73)
+        Me.cmbRight.Location = New System.Drawing.Point(176, 90)
+        Me.cmbRight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbRight.Name = "cmbRight"
-        Me.cmbRight.Size = New System.Drawing.Size(121, 28)
+        Me.cmbRight.Size = New System.Drawing.Size(160, 33)
         Me.cmbRight.TabIndex = 10
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(5, 20)
+        Me.Label6.Location = New System.Drawing.Point(7, 25)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(186, 20)
+        Me.Label6.Size = New System.Drawing.Size(226, 25)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Duración fase 1 (min):"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(5, 47)
+        Me.Label7.Location = New System.Drawing.Point(7, 58)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(186, 20)
+        Me.Label7.Size = New System.Drawing.Size(226, 25)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "Duración fase 2 (min):"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(6, 74)
+        Me.Label8.Location = New System.Drawing.Point(8, 91)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(186, 20)
+        Me.Label8.Size = New System.Drawing.Size(226, 25)
         Me.Label8.TabIndex = 13
         Me.Label8.Text = "Duración fase 3 (min):"
         '
@@ -209,10 +223,11 @@ Partial Class frmMain
         '
         Me.nudPhase1Duration.DecimalPlaces = 1
         Me.nudPhase1Duration.Increment = New Decimal(New Integer() {5, 0, 0, 0})
-        Me.nudPhase1Duration.Location = New System.Drawing.Point(203, 19)
+        Me.nudPhase1Duration.Location = New System.Drawing.Point(271, 23)
+        Me.nudPhase1Duration.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudPhase1Duration.Maximum = New Decimal(New Integer() {120, 0, 0, 0})
         Me.nudPhase1Duration.Name = "nudPhase1Duration"
-        Me.nudPhase1Duration.Size = New System.Drawing.Size(70, 26)
+        Me.nudPhase1Duration.Size = New System.Drawing.Size(93, 30)
         Me.nudPhase1Duration.TabIndex = 14
         Me.nudPhase1Duration.Value = New Decimal(New Integer() {20, 0, 0, 0})
         '
@@ -220,10 +235,11 @@ Partial Class frmMain
         '
         Me.nudPhase2Duration.DecimalPlaces = 1
         Me.nudPhase2Duration.Increment = New Decimal(New Integer() {5, 0, 0, 0})
-        Me.nudPhase2Duration.Location = New System.Drawing.Point(203, 46)
+        Me.nudPhase2Duration.Location = New System.Drawing.Point(271, 57)
+        Me.nudPhase2Duration.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudPhase2Duration.Maximum = New Decimal(New Integer() {120, 0, 0, 0})
         Me.nudPhase2Duration.Name = "nudPhase2Duration"
-        Me.nudPhase2Duration.Size = New System.Drawing.Size(70, 26)
+        Me.nudPhase2Duration.Size = New System.Drawing.Size(93, 30)
         Me.nudPhase2Duration.TabIndex = 15
         Me.nudPhase2Duration.Value = New Decimal(New Integer() {20, 0, 0, 0})
         '
@@ -231,39 +247,43 @@ Partial Class frmMain
         '
         Me.nudPhase3Duration.DecimalPlaces = 1
         Me.nudPhase3Duration.Increment = New Decimal(New Integer() {5, 0, 0, 0})
-        Me.nudPhase3Duration.Location = New System.Drawing.Point(203, 73)
+        Me.nudPhase3Duration.Location = New System.Drawing.Point(271, 90)
+        Me.nudPhase3Duration.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudPhase3Duration.Maximum = New Decimal(New Integer() {120, 0, 0, 0})
         Me.nudPhase3Duration.Name = "nudPhase3Duration"
-        Me.nudPhase3Duration.Size = New System.Drawing.Size(70, 26)
+        Me.nudPhase3Duration.Size = New System.Drawing.Size(93, 30)
         Me.nudPhase3Duration.TabIndex = 16
         Me.nudPhase3Duration.Value = New Decimal(New Integer() {20, 0, 0, 0})
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(6, 77)
+        Me.Label9.Location = New System.Drawing.Point(8, 95)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(211, 20)
+        Me.Label9.Size = New System.Drawing.Size(299, 25)
         Me.Label9.TabIndex = 17
-        Me.Label9.Text = "Min Timeout Duration (s):"
+        Me.Label9.Text = "Min. Tiempo de Espera (seg):"
         '
         'nudTimeOutDuration
         '
         Me.nudTimeOutDuration.Increment = New Decimal(New Integer() {5, 0, 0, 0})
-        Me.nudTimeOutDuration.Location = New System.Drawing.Point(225, 75)
+        Me.nudTimeOutDuration.Location = New System.Drawing.Point(305, 93)
+        Me.nudTimeOutDuration.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudTimeOutDuration.Maximum = New Decimal(New Integer() {300, 0, 0, 0})
         Me.nudTimeOutDuration.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nudTimeOutDuration.Name = "nudTimeOutDuration"
-        Me.nudTimeOutDuration.Size = New System.Drawing.Size(44, 26)
+        Me.nudTimeOutDuration.Size = New System.Drawing.Size(59, 30)
         Me.nudTimeOutDuration.TabIndex = 22
         Me.nudTimeOutDuration.Value = New Decimal(New Integer() {2, 0, 0, 0})
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(5, 103)
+        Me.Label10.Location = New System.Drawing.Point(7, 127)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(264, 20)
+        Me.Label10.Size = New System.Drawing.Size(320, 25)
         Me.Label10.TabIndex = 23
         Me.Label10.Text = "Duración del componente (min):"
         '
@@ -271,19 +291,21 @@ Partial Class frmMain
         '
         Me.nudComponentDuration.DecimalPlaces = 1
         Me.nudComponentDuration.Increment = New Decimal(New Integer() {5, 0, 0, 0})
-        Me.nudComponentDuration.Location = New System.Drawing.Point(229, 103)
+        Me.nudComponentDuration.Location = New System.Drawing.Point(305, 127)
+        Me.nudComponentDuration.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudComponentDuration.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.nudComponentDuration.Name = "nudComponentDuration"
-        Me.nudComponentDuration.Size = New System.Drawing.Size(44, 26)
+        Me.nudComponentDuration.Size = New System.Drawing.Size(59, 30)
         Me.nudComponentDuration.TabIndex = 24
         Me.nudComponentDuration.Value = New Decimal(New Integer() {2, 0, 0, 0})
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(4, 101)
+        Me.Label12.Location = New System.Drawing.Point(5, 124)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(169, 20)
+        Me.Label12.Size = New System.Drawing.Size(205, 25)
         Me.Label12.TabIndex = 25
         Me.Label12.Text = "Primer componente:"
         '
@@ -291,49 +313,55 @@ Partial Class frmMain
         '
         Me.cmbFirstComponent.FormattingEnabled = True
         Me.cmbFirstComponent.Items.AddRange(New Object() {"Timeout", "No Timeout"})
-        Me.cmbFirstComponent.Location = New System.Drawing.Point(170, 96)
+        Me.cmbFirstComponent.Location = New System.Drawing.Point(227, 118)
+        Me.cmbFirstComponent.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbFirstComponent.Name = "cmbFirstComponent"
-        Me.cmbFirstComponent.Size = New System.Drawing.Size(79, 28)
+        Me.cmbFirstComponent.Size = New System.Drawing.Size(104, 33)
         Me.cmbFirstComponent.TabIndex = 26
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(5, 20)
+        Me.Label11.Location = New System.Drawing.Point(7, 25)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(168, 20)
+        Me.Label11.Size = New System.Drawing.Size(201, 25)
         Me.Label11.TabIndex = 27
         Me.Label11.Text = "ID del Participante: "
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(5, 47)
+        Me.Label13.Location = New System.Drawing.Point(7, 58)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(158, 20)
+        Me.Label13.Size = New System.Drawing.Size(193, 25)
         Me.Label13.TabIndex = 28
         Me.Label13.Text = "Iniciales de experi:"
         '
         'txtParticipantID
         '
-        Me.txtParticipantID.Location = New System.Drawing.Point(170, 18)
+        Me.txtParticipantID.Location = New System.Drawing.Point(227, 22)
+        Me.txtParticipantID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtParticipantID.Name = "txtParticipantID"
-        Me.txtParticipantID.Size = New System.Drawing.Size(79, 26)
+        Me.txtParticipantID.Size = New System.Drawing.Size(104, 30)
         Me.txtParticipantID.TabIndex = 29
         '
         'txtExperimenterID
         '
-        Me.txtExperimenterID.Location = New System.Drawing.Point(170, 45)
+        Me.txtExperimenterID.Location = New System.Drawing.Point(227, 55)
+        Me.txtExperimenterID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtExperimenterID.Name = "txtExperimenterID"
-        Me.txtExperimenterID.Size = New System.Drawing.Size(79, 26)
+        Me.txtExperimenterID.Size = New System.Drawing.Size(104, 30)
         Me.txtExperimenterID.TabIndex = 30
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(5, 74)
+        Me.Label14.Location = New System.Drawing.Point(7, 91)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(158, 20)
+        Me.Label14.Size = New System.Drawing.Size(193, 25)
         Me.Label14.TabIndex = 31
         Me.Label14.Text = "Número de sesión:"
         '
@@ -341,9 +369,10 @@ Partial Class frmMain
         '
         Me.cmbSessionNumber.FormattingEnabled = True
         Me.cmbSessionNumber.Items.AddRange(New Object() {"1", "2"})
-        Me.cmbSessionNumber.Location = New System.Drawing.Point(170, 72)
+        Me.cmbSessionNumber.Location = New System.Drawing.Point(227, 89)
+        Me.cmbSessionNumber.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbSessionNumber.Name = "cmbSessionNumber"
-        Me.cmbSessionNumber.Size = New System.Drawing.Size(79, 28)
+        Me.cmbSessionNumber.Size = New System.Drawing.Size(104, 33)
         Me.cmbSessionNumber.TabIndex = 32
         '
         'GroupBox1
@@ -358,11 +387,11 @@ Partial Class frmMain
         Me.GroupBox1.Controls.Add(Me.Label14)
         Me.GroupBox1.Controls.Add(Me.txtParticipantID)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(11, 8)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(15, 10)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(392, 137)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(523, 169)
         Me.GroupBox1.TabIndex = 33
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Información de la sesión "
@@ -370,9 +399,10 @@ Partial Class frmMain
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(5, 20)
+        Me.Label15.Location = New System.Drawing.Point(7, 25)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(0, 20)
+        Me.Label15.Size = New System.Drawing.Size(0, 25)
         Me.Label15.TabIndex = 27
         '
         'GroupBox2
@@ -388,11 +418,11 @@ Partial Class frmMain
         Me.GroupBox2.Controls.Add(Me.nudPhase2Duration)
         Me.GroupBox2.Controls.Add(Me.nudPhase3Duration)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(407, 8)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Location = New System.Drawing.Point(543, 10)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox2.Size = New System.Drawing.Size(386, 137)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox2.Size = New System.Drawing.Size(515, 169)
         Me.GroupBox2.TabIndex = 34
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Duración"
@@ -409,11 +439,11 @@ Partial Class frmMain
         Me.GroupBox3.Controls.Add(Me.cmbRight)
         Me.GroupBox3.Enabled = False
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(11, 156)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox3.Location = New System.Drawing.Point(15, 192)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox3.Size = New System.Drawing.Size(392, 106)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox3.Size = New System.Drawing.Size(523, 130)
         Me.GroupBox3.TabIndex = 35
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Lever Assignment"
@@ -421,25 +451,28 @@ Partial Class frmMain
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(5, 20)
+        Me.Label16.Location = New System.Drawing.Point(7, 25)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(0, 20)
+        Me.Label16.Size = New System.Drawing.Size(0, 25)
         Me.Label16.TabIndex = 27
         '
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(5, 20)
+        Me.Label18.Location = New System.Drawing.Point(7, 25)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(0, 20)
+        Me.Label18.Size = New System.Drawing.Size(0, 25)
         Me.Label18.TabIndex = 11
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(5, 20)
+        Me.Label17.Location = New System.Drawing.Point(7, 25)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(0, 20)
+        Me.Label17.Size = New System.Drawing.Size(0, 25)
         Me.Label17.TabIndex = 27
         '
         'GroupBox4
@@ -454,31 +487,32 @@ Partial Class frmMain
         Me.GroupBox4.Controls.Add(Me.Label9)
         Me.GroupBox4.Controls.Add(Me.nudItems)
         Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox4.Location = New System.Drawing.Point(407, 156)
-        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox4.Location = New System.Drawing.Point(543, 192)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox4.Size = New System.Drawing.Size(386, 106)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox4.Size = New System.Drawing.Size(515, 130)
         Me.GroupBox4.TabIndex = 35
         Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Reinforcement Schedule"
+        Me.GroupBox4.Text = "Programa de Refuerzo"
         '
         'btnChangeParameters
         '
         Me.btnChangeParameters.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnChangeParameters.Location = New System.Drawing.Point(268, 302)
+        Me.btnChangeParameters.Location = New System.Drawing.Point(357, 372)
+        Me.btnChangeParameters.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnChangeParameters.Name = "btnChangeParameters"
-        Me.btnChangeParameters.Size = New System.Drawing.Size(283, 29)
+        Me.btnChangeParameters.Size = New System.Drawing.Size(377, 36)
         Me.btnChangeParameters.TabIndex = 36
         Me.btnChangeParameters.Text = "Cambiar ajustes de la sesión"
         Me.btnChangeParameters.UseVisualStyleBackColor = True
         '
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(804, 354)
+        Me.ClientSize = New System.Drawing.Size(1072, 436)
         Me.Controls.Add(Me.btnChangeParameters)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
@@ -486,6 +520,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnStart)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Resurgence & Timeout v. 1.3 2/16/2020; Traducción en proceso"
