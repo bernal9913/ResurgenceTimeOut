@@ -129,27 +129,27 @@ Partial Class frmMain
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(5, 22)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(156, 20)
+        Me.Label3.Size = New System.Drawing.Size(140, 20)
         Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Palanca izquierda:"
+        Me.Label3.Text = "Botón izquierda:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(5, 48)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(134, 20)
+        Me.Label4.Size = New System.Drawing.Size(118, 20)
         Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Palanca centro:"
+        Me.Label4.Text = "Botón centro:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(5, 75)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(148, 20)
+        Me.Label5.Size = New System.Drawing.Size(132, 20)
         Me.Label5.TabIndex = 7
-        Me.Label5.Text = "Palanca derecha:"
+        Me.Label5.Text = "Botón derecha:"
         '
         'cmbLeft
         '
@@ -310,9 +310,9 @@ Partial Class frmMain
         Me.Label13.AutoSize = True
         Me.Label13.Location = New System.Drawing.Point(5, 47)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(158, 20)
+        Me.Label13.Size = New System.Drawing.Size(238, 20)
         Me.Label13.TabIndex = 28
-        Me.Label13.Text = "Iniciales de experi:"
+        Me.Label13.Text = "Iniciales del experimentador:"
         '
         'txtParticipantID
         '
@@ -323,9 +323,9 @@ Partial Class frmMain
         '
         'txtExperimenterID
         '
-        Me.txtExperimenterID.Location = New System.Drawing.Point(214, 41)
+        Me.txtExperimenterID.Location = New System.Drawing.Point(249, 41)
         Me.txtExperimenterID.Name = "txtExperimenterID"
-        Me.txtExperimenterID.Size = New System.Drawing.Size(173, 26)
+        Me.txtExperimenterID.Size = New System.Drawing.Size(138, 26)
         Me.txtExperimenterID.TabIndex = 30
         '
         'Label14
@@ -416,7 +416,7 @@ Partial Class frmMain
         Me.GroupBox3.Size = New System.Drawing.Size(392, 106)
         Me.GroupBox3.TabIndex = 35
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Lever Assignment"
+        Me.GroupBox3.Text = "Asignación de botones"
         '
         'Label16
         '

@@ -160,10 +160,10 @@ Partial Class frmExperiment
         Me.lblSessionEnd.Location = New System.Drawing.Point(67, 359)
         Me.lblSessionEnd.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblSessionEnd.Name = "lblSessionEnd"
-        Me.lblSessionEnd.Size = New System.Drawing.Size(1444, 39)
+        Me.lblSessionEnd.Size = New System.Drawing.Size(1454, 39)
         Me.lblSessionEnd.TabIndex = 12
-        Me.lblSessionEnd.Text = "Por favor toque la puerta para avisar al experimentar que esta parte del estudio " &
-    "ha concluido."
+        Me.lblSessionEnd.Text = "Por favor, toque la puerta para avisar al experimentar que esta parte del estudio" &
+    " ha concluido."
         Me.lblSessionEnd.Visible = False
         '
         'frmExperiment
