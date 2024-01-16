@@ -456,12 +456,31 @@ Public Class frmExperiment
     '______________________RESULT FILE CREATION__________________________
 
     Private Sub WriteDataFile()
-        Dim ReadDataPaths As New StreamReader(New FileStream(mc_strPathList, FileMode.Open, FileAccess.Read))
-        m_strDataFilePath = ReadDataPaths.ReadLine
-        ReadDataPaths.Close()
-        Dim swWriteResults As StreamWriter
-        m_strRawDataFileName = m_strDataFilePath & " Resultado para " & frmMain.txtParticipantID.Text & " de Sesion " & frmMain.cmbSessionNumber.SelectedItem & ".txt"
-        swWriteResults = File.CreateText(m_strRawDataFileName)
+        'Dim ReadDataPaths As New StreamReader(New FileStream(mc_strPathList, FileMode.Open, FileAccess.Read))
+        'm_strDataFilePath = ReadDataPaths.ReadLine
+        'ReadDataPaths.Close()
+        'Dim swWriteResults As StreamWriter
+        'm_strRawDataFileName = m_strDataFilePath & " Resultado para " & frmMain.txtParticipantID.Text & " de Sesion " & frmMain.cmbSessionNumber.SelectedItem & ".txt"
+        'swWriteResults = File.CreateText(m_strRawDataFileName)
+
+        ' Crear la carpeta "resultados test" en la carpeta "Documentos"
+        Dim documentosPath As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
+        Dim resultadosTestPath As String = Path.Combine(documentosPath, "resultados test")
+
+        ' Verificar si la carpeta ya existe, si no, crearla
+        If Not Directory.Exists(resultadosTestPath) Then
+            Directory.CreateDirectory(resultadosTestPath)
+        End If
+
+        ' Crear el nombre del archivo en la nueva ubicación
+        m_strRawDataFileName = Path.Combine(resultadosTestPath, "Results for " & frmMain.txtParticipantID.Text & " for Session " & frmMain.cmbSessionNumber.SelectedItem & ".txt")
+
+        ' Crear el archivo y escribir los resultados
+        Dim swWriteResults As StreamWriter = File.CreateText(m_strRawDataFileName)
+
+
+
+
         'write header
         swWriteResults.WriteLine(" ")
         swWriteResults.WriteLine("Resumen de Sesion_________________________________________________________")

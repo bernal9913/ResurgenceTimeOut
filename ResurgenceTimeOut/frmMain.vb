@@ -28,18 +28,19 @@ Public Class frmMain
         Me.Location = New System.Drawing.Point(0, 0)
         '' vieja linea comentada 
         'MsgBox("'" & mc_strPathList & "' no encontrado. Sesión.", MsgBoxStyle.Critical, "Time Out")
-        mc_strPathList = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "TimeOutPathList.txt")
-        If Not File.Exists(mc_strPathList) Then
-            ' Si el archivo no existe, crearlo en la carpeta de documentos del usuario
-            mc_strPathList = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "TimeOutPathList.txt")
-            File.WriteAllText(mc_strPathList, String.Empty)
-            MsgBox("'" & mc_strPathList & "' no encontrado. Se creó en la carpeta de documentos del usuario.", MsgBoxStyle.Information, "Time Out")
-        End If
+        'mc_strPathList = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "TimeOutPathList.txt")
+        'If Not File.Exists(mc_strPathList) Then
+        ' Si el archivo no existe, crearlo en la carpeta de documentos del usuario
+        '    mc_strPathList = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "TimeOutPathList.txt")
+        '    File.WriteAllText(mc_strPathList, String.Empty)
+        '    MsgBox("'" & mc_strPathList & "' no encontrado. Se creó en la carpeta de documentos del usuario.", MsgBoxStyle.Information, "Time Out")
+        'End If
+        MsgBox("La ruta por defecto de guardado es: 'Documentos/Resultados test'" & Environment.NewLine & "Si desea cambiarla, contacte a soporte", MsgBoxStyle.Information)
 
         ' Leer la ruta del archivo
-        Dim ReadDataPaths As New StreamReader(New FileStream(mc_strPathList, FileMode.Open, FileAccess.Read))
-        m_strDataFilePath = ReadDataPaths.ReadLine
-        ReadDataPaths.Close()
+        'Dim ReadDataPaths As New StreamReader(New FileStream(mc_strPathList, FileMode.Open, FileAccess.Read))
+        'm_strDataFilePath = ReadDataPaths.ReadLine
+        'ReadDataPaths.Close()
     End Sub
 
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
@@ -96,35 +97,35 @@ Public Class frmMain
         'Investigar roles'
         'Investigar tambien el tema de 
         If nudPhase1Duration.Value <> 20 Or nudPhase2Duration.Value <> 20 Or nudPhase3Duration.Value <> 20 Then
-            If MsgBox("La duracion de al menos una fase no es 20, ¿Catherine te dijo que cambiaras esto?", vbYesNo) = vbNo Then
+            If MsgBox("La duracion de al menos una fase no es 20, ¿Tienes permiso para hacer esto?", vbYesNo) = vbNo Then
                 boolstatus = False
                 Return boolstatus
                 Exit Function
             End If
         End If
         If nudComponentDuration.Value <> 2 Then
-            If MsgBox("La duracion del componente no es 2s, ¿Catherine te dijo que cambiaras esto?", vbYesNo) = vbNo Then
+            If MsgBox("La duracion del componente no es 2s, ¿Tienes permiso para hacer esto?", vbYesNo) = vbNo Then
                 boolstatus = False
                 Return boolstatus
                 Exit Function
             End If
         End If
         If nudScheduleMean.Value <> 2 Then
-            If MsgBox("El valor de VI no es 2, ¿Catherine te dijo que cambiaras esto?", vbYesNo) = vbNo Then
+            If MsgBox("El valor de VI no es 2, ¿Tienes permiso para hacer esto?", vbYesNo) = vbNo Then
                 boolstatus = False
                 Return boolstatus
                 Exit Function
             End If
         End If
         If nudItems.Value <> 10 Then
-            If MsgBox("La cantidad de valores VI no es 10, ¿Catherine te dijo que cambiaras esto?", vbYesNo) = vbNo Then
+            If MsgBox("La cantidad de valores VI no es 10, ¿Tienes permiso para hacer esto?", vbYesNo) = vbNo Then
                 boolstatus = False
                 Return boolstatus
                 Exit Function
             End If
         End If
         If nudTimeOutDuration.Value <> 2 Then
-            If MsgBox("El tiempo de espera minimo no es 2s, ¿Catherine te dijo que cambiaras esto?", vbYesNo) = vbNo Then
+            If MsgBox("El tiempo de espera minimo no es 2s, ¿Tienes permiso para hacer esto?", vbYesNo) = vbNo Then
                 boolstatus = False
                 Return boolstatus
                 Exit Function
@@ -182,6 +183,10 @@ Public Class frmMain
     End Sub
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
 End Class
