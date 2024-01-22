@@ -59,5 +59,65 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Adolf_Hitler() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Adolf_Hitler", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Benito_Mussolini() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Benito_Mussolini", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property burger() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("burger", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property pizza() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("pizza", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property stalin() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("stalin", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property sushi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("sushi", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
     End Module
 End Namespace

@@ -83,13 +83,13 @@ Public Class frmMain
         End If
         'Investigar a que se refieren con lever, puede ser un slider, palanca o boton' 
         If cmbLeft.SelectedItem = cmbMiddle.SelectedItem Or cmbLeft.SelectedItem = cmbRight.SelectedItem Or cmbMiddle.SelectedItem = cmbRight.SelectedItem Then
-            MsgBox("Por favor asigne cada palanca a un rol diferente")
+            MsgBox("Por favor asigne cada botón a un rol diferente")
             boolstatus = False
             Return boolstatus
             Exit Function
         End If
         If cmbLeft.SelectedItem = "" Or cmbMiddle.SelectedItem = "" Or cmbRight.SelectedItem = "" Then
-            MsgBox("Por favor asigne un rol a cada palanca")
+            MsgBox("Por favor asigne un rol a cada botón")
             boolstatus = False
             Return boolstatus
             Exit Function
