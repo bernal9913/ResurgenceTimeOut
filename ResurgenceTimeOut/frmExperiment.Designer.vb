@@ -23,68 +23,31 @@ Partial Class frmExperiment
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.btnMiddle = New System.Windows.Forms.Button()
         Me.btnStartExperiment = New System.Windows.Forms.Button()
-        Me.btnRight = New System.Windows.Forms.Button()
-        Me.btnLeft = New System.Windows.Forms.Button()
         Me.tmrClicked = New System.Windows.Forms.Timer(Me.components)
         Me.lblPoints = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnPoints = New System.Windows.Forms.Button()
-        Me.grpConsumatory = New System.Windows.Forms.GroupBox()
         Me.lblTimeOut = New System.Windows.Forms.Label()
         Me.tmrPhase = New System.Windows.Forms.Timer(Me.components)
         Me.tmrComponent = New System.Windows.Forms.Timer(Me.components)
         Me.tmrTimeOut = New System.Windows.Forms.Timer(Me.components)
         Me.lblSessionEnd = New System.Windows.Forms.Label()
+        Me.grpConsumatory = New System.Windows.Forms.GroupBox()
+        Me.btnPoints = New System.Windows.Forms.Button()
+        Me.btnLeft = New System.Windows.Forms.Button()
+        Me.btnRight = New System.Windows.Forms.Button()
+        Me.btnMiddle = New System.Windows.Forms.Button()
         Me.grpConsumatory.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'btnMiddle
-        '
-        Me.btnMiddle.BackColor = System.Drawing.Color.Black
-        Me.btnMiddle.CausesValidation = False
-        Me.btnMiddle.ForeColor = System.Drawing.Color.Black
-        Me.btnMiddle.Location = New System.Drawing.Point(392, 188)
-        Me.btnMiddle.Name = "btnMiddle"
-        Me.btnMiddle.Size = New System.Drawing.Size(204, 44)
-        Me.btnMiddle.TabIndex = 0
-        Me.btnMiddle.TabStop = False
-        Me.btnMiddle.UseVisualStyleBackColor = False
         '
         'btnStartExperiment
         '
         Me.btnStartExperiment.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStartExperiment.Location = New System.Drawing.Point(448, 244)
+        Me.btnStartExperiment.Location = New System.Drawing.Point(450, 316)
         Me.btnStartExperiment.Name = "btnStartExperiment"
         Me.btnStartExperiment.Size = New System.Drawing.Size(90, 40)
         Me.btnStartExperiment.TabIndex = 1
         Me.btnStartExperiment.Text = "INICIAR"
         Me.btnStartExperiment.UseVisualStyleBackColor = True
-        '
-        'btnRight
-        '
-        Me.btnRight.BackColor = System.Drawing.Color.Black
-        Me.btnRight.CausesValidation = False
-        Me.btnRight.ForeColor = System.Drawing.Color.Black
-        Me.btnRight.Location = New System.Drawing.Point(676, 187)
-        Me.btnRight.Name = "btnRight"
-        Me.btnRight.Size = New System.Drawing.Size(204, 44)
-        Me.btnRight.TabIndex = 2
-        Me.btnRight.TabStop = False
-        Me.btnRight.UseVisualStyleBackColor = False
-        '
-        'btnLeft
-        '
-        Me.btnLeft.BackColor = System.Drawing.Color.Black
-        Me.btnLeft.CausesValidation = False
-        Me.btnLeft.ForeColor = System.Drawing.Color.Black
-        Me.btnLeft.Location = New System.Drawing.Point(96, 188)
-        Me.btnLeft.Name = "btnLeft"
-        Me.btnLeft.Size = New System.Drawing.Size(204, 44)
-        Me.btnLeft.TabIndex = 3
-        Me.btnLeft.TabStop = False
-        Me.btnLeft.UseVisualStyleBackColor = False
         '
         'tmrClicked
         '
@@ -99,36 +62,6 @@ Partial Class frmExperiment
         Me.lblPoints.Size = New System.Drawing.Size(164, 39)
         Me.lblPoints.TabIndex = 4
         Me.lblPoints.Text = "Puntos: 0"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(96, 36)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(98, 67)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "+1"
-        '
-        'btnPoints
-        '
-        Me.btnPoints.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPoints.Location = New System.Drawing.Point(36, 120)
-        Me.btnPoints.Name = "btnPoints"
-        Me.btnPoints.Size = New System.Drawing.Size(224, 40)
-        Me.btnPoints.TabIndex = 6
-        Me.btnPoints.Text = "Tomar punto"
-        Me.btnPoints.UseVisualStyleBackColor = True
-        '
-        'grpConsumatory
-        '
-        Me.grpConsumatory.Controls.Add(Me.btnPoints)
-        Me.grpConsumatory.Controls.Add(Me.Label1)
-        Me.grpConsumatory.Location = New System.Drawing.Point(20, 16)
-        Me.grpConsumatory.Name = "grpConsumatory"
-        Me.grpConsumatory.Size = New System.Drawing.Size(300, 176)
-        Me.grpConsumatory.TabIndex = 7
-        Me.grpConsumatory.TabStop = False
         '
         'lblTimeOut
         '
@@ -166,6 +99,69 @@ Partial Class frmExperiment
     " ha concluido."
         Me.lblSessionEnd.Visible = False
         '
+        'grpConsumatory
+        '
+        Me.grpConsumatory.BackgroundImage = Global.ResurgenceTimeOut.My.Resources.Resources.coin
+        Me.grpConsumatory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.grpConsumatory.Controls.Add(Me.btnPoints)
+        Me.grpConsumatory.Location = New System.Drawing.Point(20, 16)
+        Me.grpConsumatory.Name = "grpConsumatory"
+        Me.grpConsumatory.Size = New System.Drawing.Size(300, 176)
+        Me.grpConsumatory.TabIndex = 7
+        Me.grpConsumatory.TabStop = False
+        '
+        'btnPoints
+        '
+        Me.btnPoints.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPoints.Location = New System.Drawing.Point(36, 120)
+        Me.btnPoints.Name = "btnPoints"
+        Me.btnPoints.Size = New System.Drawing.Size(224, 40)
+        Me.btnPoints.TabIndex = 6
+        Me.btnPoints.Text = "Tomar punto"
+        Me.btnPoints.UseVisualStyleBackColor = True
+        '
+        'btnLeft
+        '
+        Me.btnLeft.BackColor = System.Drawing.Color.Black
+        Me.btnLeft.BackgroundImage = Global.ResurgenceTimeOut.My.Resources.Resources.burger1
+        Me.btnLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnLeft.CausesValidation = False
+        Me.btnLeft.ForeColor = System.Drawing.Color.Black
+        Me.btnLeft.Location = New System.Drawing.Point(96, 188)
+        Me.btnLeft.Name = "btnLeft"
+        Me.btnLeft.Size = New System.Drawing.Size(218, 123)
+        Me.btnLeft.TabIndex = 3
+        Me.btnLeft.TabStop = False
+        Me.btnLeft.UseVisualStyleBackColor = False
+        '
+        'btnRight
+        '
+        Me.btnRight.BackColor = System.Drawing.Color.Black
+        Me.btnRight.BackgroundImage = Global.ResurgenceTimeOut.My.Resources.Resources.pizza1
+        Me.btnRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnRight.CausesValidation = False
+        Me.btnRight.ForeColor = System.Drawing.Color.Black
+        Me.btnRight.Location = New System.Drawing.Point(676, 187)
+        Me.btnRight.Name = "btnRight"
+        Me.btnRight.Size = New System.Drawing.Size(207, 124)
+        Me.btnRight.TabIndex = 2
+        Me.btnRight.TabStop = False
+        Me.btnRight.UseVisualStyleBackColor = False
+        '
+        'btnMiddle
+        '
+        Me.btnMiddle.BackColor = System.Drawing.Color.Black
+        Me.btnMiddle.BackgroundImage = Global.ResurgenceTimeOut.My.Resources.Resources.sushi1
+        Me.btnMiddle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnMiddle.CausesValidation = False
+        Me.btnMiddle.ForeColor = System.Drawing.Color.Black
+        Me.btnMiddle.Location = New System.Drawing.Point(385, 188)
+        Me.btnMiddle.Name = "btnMiddle"
+        Me.btnMiddle.Size = New System.Drawing.Size(222, 123)
+        Me.btnMiddle.TabIndex = 0
+        Me.btnMiddle.TabStop = False
+        Me.btnMiddle.UseVisualStyleBackColor = False
+        '
         'frmExperiment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -185,7 +181,6 @@ Partial Class frmExperiment
         Me.Name = "frmExperiment"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.grpConsumatory.ResumeLayout(False)
-        Me.grpConsumatory.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
