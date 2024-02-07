@@ -1,4 +1,5 @@
 ﻿
+Imports System.ComponentModel
 Imports System.IO
 
 ' This version requires the support file entitled
@@ -63,10 +64,14 @@ Public Class frmExperiment
         If frmMain.cmbFirstComponent.SelectedItem = "Timeout" Then
             m_boolTimeOut = True
             Me.BackColor = Color.Red
+            PictureBox1.Image = My.Resources.skyA
+            BackgroundWorker1.RunWorkerAsync()
             labelcolor()
         Else
             m_boolTimeOut = False
             Me.BackColor = Color.Blue
+            PictureBox1.Image = My.Resources.skyB
+            BackgroundWorker1.RunWorkerAsync()
             labelcolor()
         End If
         tmrTimeOut.Interval = frmMain.nudTimeOutDuration.Value * 1000
@@ -245,6 +250,7 @@ Public Class frmExperiment
             intTimeInTimeout = intTimeEndTimeout - intTimeStartTimeout
             m_sngCumulativeTimeinTimeOutDuringComponent += intTimeInTimeout
             Me.BackColor = Color.Red
+            PictureBox1.Image = My.Resources.skyA
             labelcolor()
             m_boolSR = True
             tmrTimeOut.Enabled = False
@@ -253,6 +259,7 @@ Public Class frmExperiment
             intTimeStartTimeout = intCalcTimeSince()
             CollectData("TO start", intCalcTimeSince())
             Me.BackColor = Color.Silver
+            PictureBox1.Image = My.Resources.time_out
             labelcolor()
             m_boolSR = False
             tmrTimeOut.Enabled = True
@@ -300,6 +307,8 @@ Public Class frmExperiment
                 TimeOut(False)
             End If
             Me.BackColor = Color.Blue
+            ' cambia el fondo a imagen gif skyB.gif
+            PictureBox1.Image = My.Resources.skyB
             labelcolor()
             m_intTimeLastSR = Environment.TickCount
             CollectData("Red -> Blue", intCalcTimeSince())
@@ -307,6 +316,8 @@ Public Class frmExperiment
             CheckSchedule()
         Else
             Me.BackColor = Color.Red
+            ' cambia el fondo a imagen gif skyA.gif
+            PictureBox1.Image = My.Resources.skyA
             labelcolor()
             m_intTimeLastSR = Environment.TickCount
             CollectData("Blue -> Red", intCalcTimeSince())
@@ -494,7 +505,7 @@ Public Class frmExperiment
         swWriteResults.WriteLine("  Duracion Fase 3 = " & CStr(frmMain.nudPhase3Duration.Value) & " min")
         swWriteResults.WriteLine("  Duracion del Componente = " & CStr(frmMain.nudComponentDuration.Value) & " min")
         swWriteResults.WriteLine("  Primer Componente: " & CStr(frmMain.cmbFirstComponent.Text))
-        swWriteResults.WriteLine("  Tiempo de Espera Minimo: " & CStr(frmMain.nudTimeOutDuration.Value) & " s")
+        swWriteResults.WriteLine("  Tiempo Fuera Minimo: " & CStr(frmMain.nudTimeOutDuration.Value) & " s")
         swWriteResults.WriteLine("  Valor VI = " & CStr(frmMain.nudScheduleMean.Value) & " s")
         swWriteResults.WriteLine("  # Valores VI = " & CStr(frmMain.nudItems.Value))
         swWriteResults.WriteLine("  Inicio de Sesion: " & m_strSessionStartTime)
@@ -557,11 +568,23 @@ Public Class frmExperiment
 
     End Sub
 
+    Private Sub frmExperiment_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        BackgroundWorker1.Dispose()
+    End Sub
 
+    Private Sub frmExperiment_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        System.Windows.Forms.Application.Exit()
+    End Sub
 
-
-
-
+    Private Sub BackgroundWorker1_DoWork(sender As Object, e As DoWorkEventArgs) Handles BackgroundWorker1.DoWork
+        ' Este bucle mantiene la animación en ejecución en segundo plano
+        While True
+            ' Pausa para controlar la velocidad de la animación (ajusta según sea necesario)
+            Threading.Thread.Sleep(100)
+            ' Actualiza el formulario en el hilo de la interfaz de usuario
+            Me.Invoke(Sub() Me.Refresh())
+        End While
+    End Sub
 
     '______________________DATA CALCULATIONS___________________________
 End Class
