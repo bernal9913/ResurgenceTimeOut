@@ -1,1 +1,1 @@
-# ResurgenceTimeOut (v. 1.3)
+# ResurgenceTimeOut (v. 1.4) Spanish ver.
