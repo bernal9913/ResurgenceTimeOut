@@ -243,9 +243,9 @@ Partial Class frmMain
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(6, 77)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(243, 20)
+        Me.Label9.Size = New System.Drawing.Size(208, 20)
         Me.Label9.TabIndex = 17
-        Me.Label9.Text = "Min. Tiempo de Espera (seg):"
+        Me.Label9.Text = "Min. Tiempo Fuera (seg):"
         '
         'nudTimeOutDuration
         '
@@ -359,9 +359,9 @@ Partial Class frmMain
         Me.GroupBox1.Controls.Add(Me.txtParticipantID)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(11, 8)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Size = New System.Drawing.Size(392, 137)
         Me.GroupBox1.TabIndex = 33
         Me.GroupBox1.TabStop = False
@@ -389,9 +389,9 @@ Partial Class frmMain
         Me.GroupBox2.Controls.Add(Me.nudPhase3Duration)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(407, 8)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Size = New System.Drawing.Size(386, 137)
         Me.GroupBox2.TabIndex = 34
         Me.GroupBox2.TabStop = False
@@ -410,9 +410,9 @@ Partial Class frmMain
         Me.GroupBox3.Enabled = False
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(11, 156)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox3.Size = New System.Drawing.Size(392, 106)
         Me.GroupBox3.TabIndex = 35
         Me.GroupBox3.TabStop = False
@@ -455,9 +455,9 @@ Partial Class frmMain
         Me.GroupBox4.Controls.Add(Me.nudItems)
         Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.Location = New System.Drawing.Point(407, 156)
-        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox4.Size = New System.Drawing.Size(386, 106)
         Me.GroupBox4.TabIndex = 35
         Me.GroupBox4.TabStop = False
@@ -488,7 +488,7 @@ Partial Class frmMain
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Resurgence & Timeout v. 1.3 2/16/2020; Traducción en proceso"
+        Me.Text = "Resurgence & Timeout v. 1.4 02/05/2024; Traducción en proceso"
         CType(Me.nudScheduleMean, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudItems, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudPhase1Duration, System.ComponentModel.ISupportInitialize).EndInit()

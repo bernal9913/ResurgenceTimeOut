@@ -2,6 +2,7 @@
 ' Program requires one file on the C drive entitled "C:\TimeOutPathList.txt". The first line of the file should contain the address to the folder where you want data to be saved. Make sure that file address ends with a \
 ' v. 1.1 Fixes issue with timing of interval to SR+ after timeout; also fixes the title of the file that the program looks for the warn about duplicate files; also makes data for all components get calculated (wasn't being calculate for last component)
 ' v. 1.3 Made sure VI 2 works; updated output file name; fixed 2 s timeout
+' v. 1.4 Fixed issue with the program not being able to find the file that contains the path to the data folder, translated the program to Spanish and added design changes
 
 
 

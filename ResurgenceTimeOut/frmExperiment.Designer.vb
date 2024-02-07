@@ -36,7 +36,10 @@ Partial Class frmExperiment
         Me.btnLeft = New System.Windows.Forms.Button()
         Me.btnRight = New System.Windows.Forms.Button()
         Me.btnMiddle = New System.Windows.Forms.Button()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.grpConsumatory.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnStartExperiment
@@ -162,11 +165,25 @@ Partial Class frmExperiment
         Me.btnMiddle.TabStop = False
         Me.btnMiddle.UseVisualStyleBackColor = False
         '
+        'BackgroundWorker1
+        '
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(957, 484)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 13
+        Me.PictureBox1.TabStop = False
+        '
         'frmExperiment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.CausesValidation = False
         Me.ClientSize = New System.Drawing.Size(957, 484)
         Me.ControlBox = False
@@ -178,9 +195,12 @@ Partial Class frmExperiment
         Me.Controls.Add(Me.btnRight)
         Me.Controls.Add(Me.btnStartExperiment)
         Me.Controls.Add(Me.btnMiddle)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.DoubleBuffered = True
         Me.Name = "frmExperiment"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.grpConsumatory.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -199,4 +219,6 @@ Partial Class frmExperiment
     Friend WithEvents tmrComponent As Timer
     Friend WithEvents tmrTimeOut As Timer
     Friend WithEvents lblSessionEnd As Label
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
